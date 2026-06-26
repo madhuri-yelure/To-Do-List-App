@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <h2>Monday, 4 May</h2>
+    <div class="stats">
+      <div><span id="total">0</span><br>Total</div>
+      <div><span id="remaining">0</span><br>Remaining</div>
+      <div><span id="done">0</span><br>Done</div>
+    </div>
+  </div>
+
+  <h3 class="title">Tasks for today</h3>
+
+  <ul id="taskList"></ul>
+
+  <!-- Add Button -->
+  <button class="add-btn" onclick="showInput()">+ Add new item</button>
+
+  <!-- Popup Input -->
+  <div class="popup" id="popup">
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+  </div>
+
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
